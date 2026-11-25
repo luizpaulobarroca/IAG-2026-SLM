@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-25",
+  "scope": "Local Linux ARM64 container; not Google Colab",
+  "model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "model_revision": "ea3f2471cf1b1f0db85067f1ef93848e38e88c25",
+  "execution_status": {
+    "main_cells_passed": 14,
+    "main_cells_total": 14,
+    "whole_notebook": "incomplete",
+    "optional_fp16": "conversion process killed by memory limit",
+    "google_colab": "not verified"
+  },
+  "resource_limits": {
+    "memory_gib": 6.5,
+    "swap_gib": 0,
+    "vcpus": 4,
+    "ort_intra_op_threads": 2,
+    "ort_inter_op_threads": 1,
+    "host_isolated": false
+  },
+  "software": {
+    "python": "3.11.18",
+    "torch": "2.5.1",
+    "transformers": "4.46.3",
+    "onnx": "1.17.0",
+    "onnxruntime": "1.20.1",
+    "numpy": "1.26.4"
+  },
+  "prefill_comparisons": {
+    "prompt_tokens": 69,
+    "rounds_per_variant": 8,
+    "graph": {
+      "nodes_before": 5885,
+      "nodes_after": 2581,
+      "median_before_ms": 330.1,
+      "median_after_ms": 328.06,
+      "ratio_of_medians": 1.01,
+      "median_block_ratio": 1.0
+    },
+    "quantization": {
+      "fp32_median_ms": 333.46,
+      "int8_median_ms": 99.56,
+      "ratio_of_medians": 3.35,
+      "median_block_ratio": 3.34,
+      "fp32_size_mb": 2521.88,
+      "int8_size_mb": 1040.63
+    }
+  },
+  "interpretation_limits": [
+    "Prefill ratios do not measure end-to-end generation speedup.",
+    "Three small tasks do not establish general code-generation quality.",
+    "No statistical significance is claimed for the graph timing difference.",
+    "Energy and memory bandwidth were not measured.",
+    "Container memory peaks were not isolated per variant."
+  ],
+  "provenance": {
+    "executed_notebook_sha256": "eb49fc13482d84c61bafaacf4236a026bc1ed27b4f87b33090cd0ea3581b47c2",
+    "published_notebook_sha256": "ad2dd3ef3eb1bbd4ff6c5c781237bbaaea2a12f124a163333d572ab127924d1a",
+    "publication_changes": "English guide added; notebook Markdown links adjusted for publication. All code cell bodies, IDs and order are unchanged.",
+    "code_cells_sha256": "bb848641b59c36f559c90b3e374b0aa1764b87b538da6e94bb58bcc13ee32b0f"
+  }
+}

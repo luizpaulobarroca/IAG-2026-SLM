@@ -1,0 +1,63 @@
+{
+  "name": "Small Language Model",
+  "slug": "small-language-model",
+  "description": "Small Language Models (SLMs): hands-on CPU profiling, optimization, and evaluation practice for the Generative AI course.",
+  "children": [
+    {
+      "name": "Practice",
+      "slug": "practice",
+      "description": "Hands-on experiments with Small Language Models on local CPU hardware.",
+      "children": [
+        {
+          "name": "Profiling SLMs",
+          "slug": "profiling",
+          "description": "Self-guided tutorial applying ONNX Runtime CPU profiling, Amdahl's Law, graph optimization, dynamic INT8 quantization, output validation, and post-book performance hypotheses to Qwen2.5-Coder-0.5B-Instruct.",
+          "children": [
+            {
+              "name": "Overview",
+              "slug": "overview",
+              "description": "Tutorial purpose, CPU setup and memory budget, runnable notebook link, experimental provenance, minimal profiling example, and module roadmap.",
+              "markdown": "small-language-model/practice/profiling/overview.md"
+            },
+            {
+              "name": "Measurement and profiling",
+              "slug": "measurement",
+              "description": "The Qwen2.5-Coder-0.5B-Instruct case, prefill vs. decode and KV cache, paired timing, ONNX Runtime profiler JSON parsing, and call frequency vs. accumulated cost.",
+              "markdown": "small-language-model/practice/profiling/measurement.md"
+            },
+            {
+              "name": "Graph optimization, INT8, and FP16",
+              "slug": "optimization",
+              "description": "Amdahl's Law, ORT_ENABLE_ALL operator fusions, dynamic INT8 quantization on MatMul, variance and dtype caveats, and the FP16 CPU Cast counterexample.",
+              "markdown": "small-language-model/practice/profiling/optimization.md"
+            },
+            {
+              "name": "Output validation and limits",
+              "slug": "validation",
+              "description": "Three-task functional and contract validation, observed 25 Nov 2026 results, AST plus subprocess containment vs. sandboxing, and benchmark limitations.",
+              "markdown": "small-language-model/practice/profiling/validation.md"
+            },
+            {
+              "name": "Beyond the book",
+              "slug": "beyond-the-book",
+              "description": "Testable hypotheses for the 5,885 to 2,581 node drop (1.01x), Roofline and FlashAttention, speculative decoding, 2026 hardware studies, and Pareto frontiers.",
+              "markdown": "small-language-model/practice/profiling/beyond-the-book.md"
+            },
+            {
+              "name": "Exercises",
+              "slug": "exercises",
+              "description": "Eight worked interpretation, calculation, experimental-design, and four-criterion Pareto exercises with collapsible solutions.",
+              "markdown": "small-language-model/practice/profiling/exercises.md"
+            },
+            {
+              "name": "Reference and glossary",
+              "slug": "reference",
+              "description": "Operational glossary, notebook section map, provenance boundaries, and primary references with publication dates.",
+              "markdown": "small-language-model/practice/profiling/reference.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
